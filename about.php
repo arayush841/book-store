@@ -36,7 +36,7 @@ if (!isset($user_id)) {
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
    <style>
-      
+
    </style>
 </head>
 
@@ -59,8 +59,8 @@ if (!isset($user_id)) {
 
          <div class="content">
             <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus aut hic molestias, reiciendis natus fuga, cumque excepturi veniam ratione iure. Excepturi fugiat placeat iusto facere id officia assumenda temporibus?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+            <p>Choosing Bookly can allow you to purchase the best selling books which are being written by some of the most popular authors. Apart from the numerous advantages of choosing us, some of the most important ones are-</p>
+            <p>100% original books, Books available at affordable prices, Attractive discounts on different books, Cash on Delivery facility available and many more</p>
             <a href="contact.php" class="btn">contact us</a>
          </div>
 
@@ -90,7 +90,7 @@ if (!isset($user_id)) {
                      <div class="feedback-slider-item">
                         <img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" class="center-block img-circle" alt="Customer Feedback">
                         <h3 class="customer-name">Lisa Redfern</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                        <p>A lot of my friends were buying plans from PolicyBazar and asked me to do so as well, I am so happy that I could get the best plans shown by the team, the team is very professional and help</p>
                         <span class="light-bg customer-rating" data-rating="5">
                            5
                            <i class="fa fa-star"></i>
@@ -102,7 +102,7 @@ if (!isset($user_id)) {
                      <div class="feedback-slider-item">
                         <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="center-block img-circle" alt="Customer Feedback">
                         <h3 class="customer-name">Cassi</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                        <p>Good shop, one would certainly get the required books, if not immediately they will get it soon. Good staff. Great service.</p>
                         <span class="light-bg customer-rating" data-rating="4">
                            4
                            <i class="fa fa-star"></i>
@@ -114,7 +114,7 @@ if (!isset($user_id)) {
                      <div class="feedback-slider-item">
                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" class="center-block img-circle" alt="Customer Feedback">
                         <h3 class="customer-name">Md Nahidul</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                        <p>Dear All,This Bookstore is a International label. I love it. All type of books are available here. if you required any book please go ahead and try this Store.love it.</p>
                         <span class="light-bg customer-rating" data-rating="5">
                            5
                            <i class="fa fa-star"></i>

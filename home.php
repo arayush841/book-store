@@ -56,7 +56,7 @@ if (isset($_POST['add_to_cart'])) {
 
       <div class="content">
          <h3>Hand Picked Book to your door.</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
+         <p>We bring only what you need. Books available for GK, Motivational and Geography as well</p>
          <a href="about.php" class="white-btn">discover more</a>
       </div>
 
@@ -105,13 +105,13 @@ if (isset($_POST['add_to_cart'])) {
             <img src="images/about-img.jpg" alt="About image">
          </div>
 
-            <div class="content">
-               <h3>about us</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
-               <a href="about.php" class="btn">read more</a>
-            </div>
-
+         <div class="content">
+            <h3>about us</h3>
+            <p>We work to connect readers with independent booksellers all over the world. We believe local bookstores are essential community hubs that foster culture, curiosity, and a love of reading, and we're committed to helping them survive and thrive.</p>
+            <a href="about.php" class="btn">read more</a>
          </div>
+
+      </div>
 
    </section>
 
@@ -119,7 +119,7 @@ if (isset($_POST['add_to_cart'])) {
 
       <div class="content">
          <h3>have any questions?</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+         <p>Any query regarding any book or purchase? You can contact us directly from here.</p>
          <a href="contact.php" class="white-btn">contact us</a>
       </div>
 
