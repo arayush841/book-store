@@ -84,7 +84,7 @@ if(isset($_POST['update_product'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+   <title>Products</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -105,8 +105,8 @@ if(isset($_POST['update_product'])){
 
    <form action="" method="post" enctype="multipart/form-data">
       <h3>add product</h3>
-      <input type="text" name="name" class="box" placeholder="enter product name" required>
-      <input type="number" min="0" name="price" class="box" placeholder="enter product price" required>
+      <input type="text" name="name" class="box" placeholder="Enter Product Name" required>
+      <input type="number" min="0" name="price" class="box" placeholder="Enter Product Price" required>
       <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
       <input type="submit" value="add product" name="add_product" class="btn">
    </form>
