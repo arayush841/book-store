@@ -55,7 +55,7 @@ if(isset($_POST['add_to_cart'])){
 
 <section class="products">
 
-   <h1 class="title">latest products</h1>
+   <h1 class="title"></h1>
 
    <div class="box-container">
 
