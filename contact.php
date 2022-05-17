@@ -6,11 +6,11 @@ session_start();
 
 $user_id = $_SESSION['user_id'];
 
-if(!isset($user_id)){
+if (!isset($user_id)) {
    header('location:login.php');
 }
 
-if(isset($_POST['send'])){
+if (isset($_POST['send'])) {
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -19,19 +19,19 @@ if(isset($_POST['send'])){
 
    $select_message = mysqli_query($conn, "SELECT * FROM `message` WHERE name = '$name' AND email = '$email' AND number = '$number' AND message = '$msg'") or die('query failed');
 
-   if(mysqli_num_rows($select_message) > 0){
+   if (mysqli_num_rows($select_message) > 0) {
       $message[] = 'message sent already!';
-   }else{
+   } else {
       mysqli_query($conn, "INSERT INTO `message`(user_id, name, email, number, message) VALUES('$user_id', '$name', '$email', '$number', '$msg')") or die('query failed');
       $message[] = 'message sent successfully!';
    }
-
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,41 +43,65 @@ if(isset($_POST['send'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
-<body>
-   
-<?php include 'header.php'; ?>
 
-<!-- <div class="heading">
+<body>
+
+   <?php include 'header.php'; ?>
+
+   <!-- <div class="heading">
    <h3>contact us</h3>
    <p> <a href="home.php">home</a> / contact </p>
 </div> -->
 
-<section class="contact">
+   <section class="contact">
+      <div class="row">
+         <div class="col">
+               <div class="card" style="width: 40rem;">
+                  <div class="card-body" style=" text-align: center;">
+                     <h1 class="card-title">Contact Us Through</h1>
+                     <h2 class="card-subtitle mb-2 text-muted">Call Us</h2>
+                     <p class="card-text" style="font-size: 20px;">+912-345-6789</p>
+                     <h2 class="card-subtitle mb-2 text-muted">Location</h2>
+                     <p class="card-text" style="font-size: 20px;"> Gurugram, India <br>122014</p>
+                     <h2 class="card-subtitle mb-2 text-muted">Email</h2>
+                     <a href = "mailto:bookly@support.com" style="font-size: 20px;"> <i class="fas fa-envelope"></i> bookly@support.com </a>
+                  </div>
+               </div>
 
-   <form action="" method="post">
-      <h3>say something!</h3>
-      <input type="text" name="name" required placeholder="Enter your Name" class="box">
-      <input type="email" name="email" required placeholder="Enter your Email" class="box">
-      <input type="number" name="number" required placeholder="Enter your Number" class="box">
-      <textarea name="message" class="box" placeholder="Enter your Message" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="send message" name="send" class="btn">
-   </form>
+         </div>
+         <div class="col">
+            <form action="" method="post">
+               <h3>say something!</h3>
+               <input type="text" name="name" required placeholder="Enter your Name" class="box">
+               <input type="email" name="email" required placeholder="Enter your Email" class="box">
+               <input type="number" name="number" required placeholder="Enter your Number" class="box">
+               <textarea name="message" class="box" placeholder="Enter your Message" id="" cols="30" rows="10"></textarea>
 
-</section>
-
-
-
-
-
+               <button class="btn btn-primary btn-lg" value="send message" name="send">Send Message</button>
+               <!--<input type="submit" value="send message" name="send" class="btn  btn-primary">-->
+            </form>
+         </div>
 
 
+      </div>
 
-<?php include 'footer.php'; ?>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+   </section>
+
+
+
+
+
+
+
+
+   <?php include 'footer.php'; ?>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
 
 </body>
+
 </html>

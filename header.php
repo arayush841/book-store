@@ -10,18 +10,18 @@ if(isset($message)){
    }
 }
 ?>
-
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
 <header class="header">
 
    <div class="header-1">
       <div class="flex">
          <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-facebook-f" style="color: white;"></a>
+            <a href="#" class="fab fa-twitter" style="color: white;"></a>
+            <a href="#" class="fab fa-instagram" style="color: white;"></a>
+            <a href="#" class="fab fa-linkedin" style="color: white;"></a>
          </div>
-         <p> New <a href="login.php">Login</a> | <a href="register.php">Register</a> </p>
+         <p style="color: white;"> New <a href="login.php">Login</a> | <a href="register.php">Register</a> </p>
       </div>
    </div>
 
@@ -29,7 +29,7 @@ if(isset($message)){
       <div class="flex">
          <a href="home.php" class="logo">Bookly.</a>
 
-         <nav class="navbar">
+         <nav class="navbar" >
             <a href="home.php">Home</a>
             <a href="about.php">About</a>
             <a href="shop.php">Shop</a>

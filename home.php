@@ -44,10 +44,29 @@ if (isset($_POST['add_to_cart'])) {
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 </head>
+<style>
+   .btn .btn-primary{
+      height: auto;
 
+   }
+   .btn-primary{
+      height: auto;
+      
+   }
+   .btn-lg {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+</style>
 <body>
 
    <?php include 'header.php'; ?>
@@ -81,7 +100,10 @@ if (isset($_POST['add_to_cart'])) {
                   <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
                   <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
                   <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-                  <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+
+                  <button class="btn btn-primary btn-lg" value="add to cart" name="add_to_cart">Add to Cart</button>
+                  <!--<input type="submit" value="add to cart" name="add_to_cart" class="btn btn-primary">-->
+                  
                </form>
          <?php
             }
