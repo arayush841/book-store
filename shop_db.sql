@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2022 at 10:16 AM
+-- Generation Time: Mar 03, 2022 at 01:54 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -84,32 +84,6 @@ CREATE TABLE `products` (
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES
-(1, 'How To Talk To Anyone', 225, '1.jpg'),
-(2, 'Think & Grow Rich', 99, '2.jpg'),
-(3, 'Deep Work', 270, '3.jpg'),
-(4, 'The Monk Who Sold His Ferrari', 180, '4.jpg'),
-(5, 'How to Stop Worrying and Start Living', 149, '5.jpg'),
-(6, 'The Girl In Room 105', 145, '6.jpg'),
-(7, 'The Silent Patient', 350, '7.jpg'),
-(8, 'Dark Matter', 300, '8.jpg'),
-(9, 'The Alchemist', 250, '9.jpg'),
-(10, 'Atomic Habits', 499, '10.jpg'),
-(11, 'Who Will Cry When You Die?', 150, '11.jpg'),
-(12, 'Ghosts of The Silent Hills', 199, '12.jpg'),
-(13, 'The Power of Your Subconscious Mind', 100, '13.jpg'),
-(14, 'The Richest Man in Babylon', 99, '20.jpg'),
-(15, 'Rich Dad Poor Dad', 300, '15.jpg'),
-(16, 'How Successful People Think', 270, '18.jpg'),
-(17, 'The Psychology of Money', 300, '14.jpg'),
-(18, 'How to Enjoy Your Life and Your Job', 109, '16.jpg'),
-(19, 'Ikigai: The Japanese secret to a long and happy life', 350, '17.jpg'),
-(20, 'The Compound Effect', 269, '19.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -123,18 +97,6 @@ CREATE TABLE `users` (
   `password` varchar(100) NOT NULL,
   `user_type` varchar(20) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `user_type`) VALUES
-(6, 'UtkarshADMIN', 'utkarshadmin@admin.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'admin'),
-(7, 'utkarshUSER', 'utkarshuser@user.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'user'),
-(8, 'SahilUSER', 'sahil@user.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'user'),
-(9, 'sahilADMIN', 'sahil@admin.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'admin'),
-(10, 'AyushADMIN', 'ayush@admin.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'admin'),
-(11, 'AyushUSER', 'ayush@user.xyz', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'user');
 
 --
 -- Indexes for dumped tables
@@ -196,13 +158,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

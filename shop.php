@@ -36,7 +36,7 @@ if(isset($_POST['add_to_cart'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>shop</title>
+   <title>Shop</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -51,12 +51,11 @@ if(isset($_POST['add_to_cart'])){
 
 <div class="heading">
    <h3>our shop</h3>
-   <p> <a href="home.php">home</a> / shop </p>
 </div>
 
 <section class="products">
 
-   <h1 class="title">latest products</h1>
+   <h1 class="title"></h1>
 
    <div class="box-container">
 
@@ -73,7 +72,7 @@ if(isset($_POST['add_to_cart'])){
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-      <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+      <button class="btn btn-primary btn-lg" value="add to cart" name="add_to_cart">Add to Cart</button>
      </form>
       <?php
          }
